@@ -1,0 +1,63 @@
+@media screen and (max-width: 768px) {
+    nav{
+        /* flex-direction: column; */
+    }
+
+    ul#nav > li{
+        display: block;
+    }
+
+    .bg-image{
+        background-size: cover;
+    }
+
+    .flex-box{
+        flex-direction: column;
+    }
+
+    .content{
+        width: 100%;
+    }
+
+    .side-bar{
+        width: 100%;
+    }
+
+    .sub-content{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .menu{
+        visibility: visible;
+        padding: 10px;
+    }
+
+    ul#nav {
+        position: absolute;
+        top:100%;
+        margin-top: -1px;
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1;
+        background-color: rgba(0,0,0,0.5);
+        width: 100%;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+    }
+
+    ul#nav.visible {
+        opacity: 1;
+        visibility: visible;
+        z-index: 5;
+    }
+
+    .search{
+        visibility: hidden;
+        display: none;
+    }
+
+}
+    

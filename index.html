@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisata Sulsel</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        
+        <div class="container">
+            <img class="logo" src="https://seeklogo.com/images/S/sulawesi-selatan-logo-CC3A806053-seeklogo.com.png" alt="">
+            <nav>
+                <svg xmlns="http://www.w3.org/2000/svg" class="menu" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <ul id="nav">
+                    <li>Beranda</li>
+                    <li>Destinasi Wisata</li>
+                    <li>Tentang Kami</li>
+                </ul>
+                <div class="search">
+                    <form action="#" autocomplete="off">
+                        <input type="text"
+                            placeholder="Search..."
+                            name="search">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="search-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="bg-image"></div>
+    <main class="flex-box">
+        <article class="content">
+            <h1>Explore the unique culture and heritage in South Sulawesi!</h1>
+            <p>South Sulawesi is an area of Indonesia that has interesting tourist, natural and cultural destinations to visit.</p>
+            <div class="wrapper">
+                <figure class="column-item" id="culinary">
+                    <img class="img-cat" src="image/coto makassar.jpg">
+                    <figcaption class="caption">Culinary</figcaption>
+                </figure>
+                <figure class="column-item" id="nature">
+                    <img class="img-cat" src="image/pantai bira.jpg">
+                    <figcaption class="caption">Nature & Wildlife</figcaption>
+                </figure>
+                <figure class="column-item" id="heritage">
+                    <img class="img-cat" src="image/benteng rotterdam.jpg">
+                    <figcaption class="caption">Arts, Culture, & Heritage</figcaption>
+                </figure>
+            </div>
+            <hr id="line">
+            <div id="dynamic-content">
+                <div class="sub-content"></div>
+                <div id="loader"></div> 
+            </div>      
+        </article>
+        <aside class="side-bar">
+            <img class="profil" src="/image/tuti.jpeg" alt="">
+            <div>
+                <h3>Tuti Amalia</h2>
+                <p>Hi.. 👋</p>
+                <p>My name is Tuti. I'm from Makassar. </p>
+                <p>Wanna be front-end web developer</p>
+                <div class="sosmed">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="email" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    <p>amalia.tuti111@gmail.com</p></div>
+                <div class="sosmed">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="linked" viewBox="0 0 48 48"><path fill="#0288d1" d="M24 4A20 20 0 1 0 24 44A20 20 0 1 0 24 4Z"/><path fill="#fff" d="M14 19H18V34H14zM15.988 17h-.022C14.772 17 14 16.11 14 14.999 14 13.864 14.796 13 16.011 13c1.217 0 1.966.864 1.989 1.999C18 16.11 17.228 17 15.988 17zM35 24.5c0-3.038-2.462-5.5-5.5-5.5-1.862 0-3.505.928-4.5 2.344V19h-4v15h4v-8c0-1.657 1.343-3 3-3s3 1.343 3 3v8h4C35 34 35 24.921 35 24.5z"/></svg>
+                    <a href="https://www.linkedin.com/in/tuti-amalia-651b8615a/">Linkedin</a></div>
+                <div class="sosmed">
+                    <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="github">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z" transform="scale(64)" fill="#1B1F23"/>
+                        </svg>
+                    <a href="https://github.com/TutiAmalia">Github</a>
+                </div>    
+                    
+                </div>
+            </div>
+            
+        </aside>
+    </main>
+    <footer>
+        <div class="container-footer">
+            <div class="footer-content">
+                <div class="footer-item">
+                    copyright &copy; 2022
+                </div>
+            </div></div>
+    </footer>
+<script src="index.js"></script>
+</body>
+</html>
